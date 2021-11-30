@@ -1,0 +1,167 @@
+body{
+width: 100%;
+height: 545px;
+
+background: #FFFFFF;
+}
+
+    /* Join Us Now */
+#joinus{
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 35px;
+letter-spacing: -0.18216px;
+
+color: #673692;
+}
+#info{
+    /* Please provide the following information to signup */
+
+margin-right:70%;
+width:60%;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+text-align: center;
+
+color: #452461;
+}
+
+#fullname{
+    /* Full Name */
+
+
+width: 291px;
+height: 19px;
+left: 189px;
+top: 223px;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.08em;
+
+color: #9A79B6;
+}
+
+.inputfullname{
+
+height: 56px;
+width: 454px;
+left: 0px;
+top: 0px;
+border-radius: 8px;
+
+
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(225, 215, 233, 0.2);
+border: 1px solid rgba(154, 121, 182, 0.9);
+box-sizing: border-box;
+border-radius: 8px;
+}
+#formgroup{
+
+width: 454px;
+height: 79px;
+left: 189px;
+top: 223px;
+}
+#forgot{
+    /* Forgot Password? */
+float:right;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: -0.18216px;
+
+color: #673692;
+}
+#submit{
+border: none;
+background: #673692;
+border-radius: 8px;
+width: 540px;
+}
+#haveaccount{
+    font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+text-align: center;
+
+color: #452461;
+}
+#continuewithfb{
+    width: 454px;
+height: 54px;
+left: 189px;
+top: 587px;
+border: none;
+
+background: #1877F2;
+border-radius: 10px;
+}
+#facebooktext{
+    width: 232px;
+height: 23px;
+left: 111px;
+top: 15px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+#continuewithg{
+    width: 454px;
+height: 54px;
+left: 189px;
+top: 657px;
+border: none;
+background: #FFFFFF;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+border-radius: 10px;
+}
+#googletext{
+    width: 192px;
+height: 23px;
+left: 142px;
+top: 15px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+color: rgba(0, 0, 0, 0.54);
+}
