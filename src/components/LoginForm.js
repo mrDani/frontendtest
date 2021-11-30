@@ -63,7 +63,7 @@ function LoginForm({location, history}) {
 
                     </Form>
                     <p id="haveaccount">Don't have an account?
-                    <LinkContainer to="/signup">
+                    <LinkContainer to={redirect ? `/?redirect=${redirect}` : '/signup'}>
                         <span>Sign Up</span>
                     </LinkContainer>
                      </p>
