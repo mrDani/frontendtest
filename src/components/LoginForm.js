@@ -2,8 +2,8 @@ import React,{useState, useEffect } from 'react'
 import { Container, Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
-import Loader from '../components/Loader'
-import Message from '../components/Message'
+import Loader from './Loader'
+import Message from './Message'
 import { login } from '../actions/userActions'
 
 function LoginForm({location, history}) {
@@ -13,16 +13,12 @@ function LoginForm({location, history}) {
 
     const dispatch = useDispatch()
 
-    const redirect = location.search ? location.search.split('=')[1] : '/'
+
 
     const userLogin = useSelector(state => state.userLogin)
     const { error, loading, userInfo } = userLogin
 
-    useEffect(() => {
-        if (userInfo) {
-            history.push(redirect)
-        }
-    }, [history, userInfo, redirect])
+
 
     const submitHandler = (e) => {
         e.preventDefault()
@@ -63,7 +59,7 @@ function LoginForm({location, history}) {
 
                     </Form>
                     <p id="haveaccount">Don't have an account?
-                    <LinkContainer to={redirect ? `/?redirect=${redirect}` : '/signup'}>
+                    <LinkContainer to='/signup'>
                         <span>Sign Up</span>
                     </LinkContainer>
                      </p>

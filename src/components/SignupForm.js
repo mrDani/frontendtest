@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Container, Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import Loader from '../components/Loader'
-import Message from '../components/Message'
+import Loader from './Loader'
+import Message from './Message'
 import { register } from '../actions/userActions'
 
 import { LinkContainer } from 'react-router-bootstrap'
@@ -17,16 +17,11 @@ function LoginForm({location, history}) {
 
     const dispatch = useDispatch()
 
-    const redirect = location.search ? location.search.split('=')[1] : '/'
 
     const userRegister = useSelector(state => state.userRegister)
-    const { error, loading, userInfo } = userRegister
+    const { error, loading } = userRegister
 
-    useEffect(() => {
-        if (userInfo) {
-            history.push(redirect)
-        }
-    }, [history, userInfo, redirect])
+
 
     const submitHandler = (e) => {
         e.preventDefault()
@@ -70,20 +65,10 @@ function LoginForm({location, history}) {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label id="fullname">Phone Number</Form.Label><br/>
-                        <Form.Control type="email" placeholder="Enter email" className="inputfullname"/>
+                        <Form.Control type="email" placeholder="Phone Number" className="inputfullname"/>
 
                     </Form.Group>
 
-
-
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label id="fullname">Email address</Form.Label><br/>
-                        <Form.Control type="email" placeholder="Enter email" className="inputfullname"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        />
-
-                    </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label id="fullname">Password</Form.Label><br/>
